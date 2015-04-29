@@ -2,6 +2,11 @@
 壓縮:
 http://note.drx.tw/2008/04/command.html
 
+複製:
+```
+cp aaa bbb     : 複製檔案
+cp -r aaa bbb  : 複製資料夾
+```
 
 搜尋:
 ```
