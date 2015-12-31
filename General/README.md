@@ -2,19 +2,14 @@
 壓縮:
 http://note.drx.tw/2008/04/command.html
 
-複製:
-```
-cp aaa bbb       : 複製檔案
-cp -r   aaa bbb  : 複製資料夾
-cp -avr aaa bbb  : 複製資料夾
-    -a : 保持檔案狀態(權限,使用者 etc )
-    -v : 顯示目前進度
-    -r : 重複
-```
 
 搜尋:
 ```
 find -name xxx：搜尋檔案
+
+ack --nogroup --column xxx *
+
+grep -Irn --exclude={*.pl,*.dox,*.cmd,*.lds,*.TXT,tags,README} "drivers" *
 
 grep -r -n 'xxx' .  
 grep -r -n 'xxx' --include *.c .   : 指定副檔名
