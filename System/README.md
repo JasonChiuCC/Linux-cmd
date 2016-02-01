@@ -22,6 +22,7 @@ lsscsi              ：SCSI 介面裝置
 cat /proc/cpuinfo   ：CPU 狀態
 cat /proc/meminfo   ：Memory 狀態
 cat /proc/verson    ：Kernel 版本
+cat /proc/iomem     ：Memory mapping
 cat /etc/issue      ：Kernel 版本
 cat /etc/*-release  ：Linux
 free                ：Memory 狀態
