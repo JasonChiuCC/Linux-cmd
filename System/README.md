@@ -1,10 +1,9 @@
-HD Info:
+## HD Info
 ```
 df -h               ：目前硬碟剩餘空間與使用空間
 ```
 
-
-Ps 指令:
+## Ps 指令
 ```
 ps aux              ：全部 Process
 ps -p [PID] -o comm ：Get Process name 
@@ -14,7 +13,7 @@ char                ：Set Process schedule
 cat /boot/config-*  | grep CONFIG_HZ 
 ```
 
-訊息:
+## 訊息
 ```
 lspci               ：PCI 介面裝置
 lsusb               ：USB 介面裝置
@@ -32,4 +31,11 @@ dmesg               ：Kernel 訊息
 uname -a            ：Kernel 資訊
 smartctl            ：硬碟資訊
 lsb_release         ：Linux
+```
+
+## Add user
+```
+sudo adduser UserName
+sudo vim /etc/sudoers
+sudo smbpasswd -a UserName
 ```
