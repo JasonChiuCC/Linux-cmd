@@ -1,7 +1,9 @@
 
 壓縮:
 http://note.drx.tw/2008/04/command.html
-
+```bash
+tar zcvf AAA.tar.gz AAA --exclude=.svn
+```
 
 搜尋:
 ```
