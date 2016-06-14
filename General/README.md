@@ -5,6 +5,11 @@ http://note.drx.tw/2008/04/command.html
 tar zcvf AAA.tar.gz AAA --exclude=.svn
 ```
 
+顯示
+```bash
+nl xxx.txt : 顯示內容和行數
+```
+
 搜尋:
 ```
 find -name xxx：搜尋檔案
