@@ -8,6 +8,13 @@ tar zcvf AAA.tar.gz AAA --exclude=.svn
 顯示
 ```bash
 nl xxx.txt : 顯示內容和行數 = cat -n
+realpath
+pwd
+```
+
+暫存
+```bash
+mktemp
 ```
 
 搜尋:
