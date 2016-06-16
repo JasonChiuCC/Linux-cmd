@@ -1,6 +1,7 @@
 #!/bin/sh
 clear
 # http://linux.vbird.org/linux_basic/0330regularex/awk.pdf
+# http://www.cses.tc.edu.tw/~chihwu/adduser-2.htm
 # A125 Jenny 100 210  = 第一列資料(RS)
 # A341 Dan   110 215  = 第二列資料(RS)
 # P158 Max   130 209
