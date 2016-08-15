@@ -1,0 +1,53 @@
+#!/bin/bash
+#==============================================
+# I2C Access Test
+#==============================================
+export i2c_file_date='2016/08/15'  
+export i2c_file_version='0.0.1'  
+export i2c_file_name='I2C_Test.sh'
+export i2c_cfg_file_name='i2c_device.cfg'  
+
+# Text color
+export COLOR_REST='\e[0m'
+export COLOR_GREEN='\e[0;32m'
+export COLOR_RED='\e[0;31m'
+#clear
+
+#==============================================
+# Start
+#==============================================
+#printf  "${COLOR_GREEN} ================================================================== ${COLOR_REST}\n"
+#printf  "${COLOR_GREEN} I2C Access Test                                                    ${COLOR_REST}\n"
+#printf  "${COLOR_GREEN} ================================================================== ${COLOR_REST}\n"
+
+#==============================================
+# Select command 
+#==============================================
+if [ -z $1 ]
+then
+  command=""
+elif [ -n $1 ]
+then
+  command=$1
+fi
+case $command in
+   "-h")
+        printf  "${COLOR_GREEN}$i2c_file_name $i2c_file_version $i2c_file_date          ${COLOR_REST}\n"
+        printf  "${COLOR_GREEN}Usage: $i2c_file_name [command]                          ${COLOR_REST}\n"
+        printf  "${COLOR_GREEN}     -h              print help message                  ${COLOR_REST}\n"
+        printf  "${COLOR_GREEN}     -s              show i2c table                      ${COLOR_REST}\n"
+        printf  "${COLOR_GREEN}     -v              show version                        ${COLOR_REST}\n"
+        ;;
+   "-s")
+        printf  "${COLOR_GREEN}DevName          Bus    DevAddr    MuxChan    MuxChan2   ${COLOR_REST}\n"                                
+        awk '!/^#/' $i2c_cfg_file_name
+        ;;
+   "-v")
+        printf  "${COLOR_GREEN}File Name    : $i2c_file_name                            ${COLOR_REST}\n"
+        printf  "${COLOR_GREEN}Version      : $i2c_file_version                         ${COLOR_REST}\n"
+        printf  "${COLOR_GREEN}Release Date : $i2c_file_date                            ${COLOR_REST}\n"
+        ;;         
+   *)   
+        printf  "${COLOR_RED}Command Error! Please read '$i2c_file_name -h'             ${COLOR_REST}\n"
+        ;;
+esac
