@@ -24,6 +24,7 @@ cat /proc/verson    ：Kernel 版本
 cat /proc/iomem     ：Memory mapping
 cat /etc/issue      ：Kernel 版本
 cat /etc/*-release  ：Linux
+cat /proc/pid/maps  ：各 process 的 vma 
 free                ：Memory 狀態
 dmidecode           ：硬體資訊
 hdparm              ：硬體資訊
