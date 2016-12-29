@@ -4,6 +4,15 @@ http://note.drx.tw/2008/04/command.html
 ```bash
 tar zcvf AAA.tar.gz AAA --exclude=.svn
 ```
+複製
+```
+scp -r File/ jason@111.222.333.444:/jason.cc.chiu
+
+如果出現:WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
+1. cd ~/.ssh/
+2. vi known_hosts
+3. dd刪除
+```
 
 顯示
 ```bash
